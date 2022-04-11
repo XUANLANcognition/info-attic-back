@@ -9,7 +9,6 @@ router = routers.DefaultRouter()
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('books/', BookList.as_view(), name='book-list'),
     path('books/<int:pk>', BookDetail.as_view(), name='book-detail'),
     path('bookquotes/', BookQuoteList.as_view(), name='bookquote-list'),
