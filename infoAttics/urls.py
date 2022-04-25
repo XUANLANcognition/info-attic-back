@@ -28,4 +28,5 @@ urlpatterns = [
     path('token/', MyObtainTokenPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path(r'api/v1/', include('books.urls')),
+    path(r'api/v1/', include('users.urls')),
 ]
