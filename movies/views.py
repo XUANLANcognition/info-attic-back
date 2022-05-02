@@ -18,7 +18,7 @@ class MovieSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Movie
         fields = ('id', 'url', 'movie_name', 'movie_type', 'movie_cover', 'movie_director', 'movie_screenwriter',
-                  'movie_starring', 'movie_cr', 'movie_pub_date', 'movie_minutes', 'movie_episodes', 'movie_episode_minutes', 'pub_date')
+                  'movie_starring', 'movie_cr', 'movie_pub_date', 'movie_minutes', 'movie_episodes', 'movie_episode_minutes', 'movie_abstract', 'pub_date')
 
 
 class MovieFilter(filters.FilterSet):
